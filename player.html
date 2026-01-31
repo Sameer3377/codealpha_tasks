@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player - Code Alpha Task</title>
+    <link rel="stylesheet" href="assets/css/player.css">
+</head>
+<body>
+    <div class="player-container">
+        <h1>🎵 Music Player</h1>
+
+        <div class="music-player">
+            <!-- Album Art -->
+            <div class="album-art" id="albumArt">
+                <div class="visualizer-bar"></div>
+                <div class="visualizer-bar"></div>
+                <div class="visualizer-bar"></div>
+                <div class="visualizer-bar"></div>
+                <div class="visualizer-bar"></div>
+                <div class="visualizer-bar"></div>
+                <div class="visualizer-bar"></div>
+                <div class="visualizer-bar"></div>
+            </div>
+
+            <!-- Song Info -->
+            <div class="song-info">
+                <div class="song-title" id="songTitle">Select a song to play</div>
+                <div class="song-artist" id="songArtist">Unknown Artist</div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress" id="progress"></div>
+                    <div class="progress-thumb" id="progressThumb"></div>
+                </div>
+                <div class="time-display">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button class="control-btn" id="prevBtn" title="Previous">⏮</button>
+                <button class="control-btn play-btn" id="playBtn" title="Play">▶</button>
+                <button class="control-btn" id="nextBtn" title="Next">⏭</button>
+            </div>
+
+            <!-- Volume Control -->
+            <div class="volume-control">
+                <span class="volume-icon" id="volumeIcon">🔊</span>
+                <div class="volume-slider" id="volumeSlider">
+                    <div class="volume-level" id="volumeLevel"></div>
+                </div>
+            </div>
+
+            <!-- Playlist Header -->
+            <div class="playlist-header">
+                <h3>Playlist</h3>
+                <div>
+                    <button class="shuffle-btn" id="shuffleBtn" title="Shuffle">🔀</button>
+                    <button class="repeat-btn" id="repeatBtn" title="Repeat">🔁</button>
+                </div>
+            </div>
+
+            <!-- Playlist -->
+            <div class="playlist" id="playlist"></div>
+
+            <!-- Hidden Audio Element -->
+            <audio id="audio"></audio>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-home">🏠</a>
+
+    <script src="assets/js/player.js"></script>
+</body>
+</html>
